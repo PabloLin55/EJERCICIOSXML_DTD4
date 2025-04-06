@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Pablo Lin
+Curso: 1DAW 
+Fecha: 1/04/2025 
+Ejercicio: XML_DTD4
+-->
+<!DOCTYPE flores [
+<!ELEMENT flores (flor+)>
+<!ELEMENT flor (#PCDATA)>
+]>
+
+<flores>
+    <flor>Crisantemo</flor>
+</flores>

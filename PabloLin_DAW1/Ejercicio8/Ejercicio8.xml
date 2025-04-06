@@ -1,0 +1,29 @@
+<? xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Pablo Lin
+Curso: 1DAW 
+Fecha: 1/04/2025 
+Ejercicio: XML_DTD8
+-->
+<! DOCTYPE agenda [
+<! ELEMENT agenda (contacto*)>
+<! ELEMENT contacto (nombre, telefonoFijo*, telefonoMovil+)>
+<! ELEMENT nombre (#PCDATA)>
+<! ELEMENT telefonoFijo (#PCDATA)>
+<! ELEMENT telefonoMovil (#PCDATA)>
+]>
+
+<agenda>
+    <contacto>
+        <nombre>Ayuntamiento</nombre>
+        <telefonoFijo>010</telefonoFijo>
+        <telefonoMovil>12345</telefonoMovil>
+    </contacto>
+
+    <contacto>
+        <nombre>Emergencias</nombre>
+        <telefonoFijo>112 (Unión Europea)</telefonoFijo>
+        <telefonoFijo>911 (Estados Unidos)</telefonoFijo>
+        <telefonoMovil>Desconocido</telefonoMovil>
+    </contacto>
+</agenda>
